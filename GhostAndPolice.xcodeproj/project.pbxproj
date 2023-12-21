@@ -16,6 +16,9 @@
 		2E467E292B345F9400F6C60E /* GhostAndPoliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E467E282B345F9400F6C60E /* GhostAndPoliceTests.swift */; };
 		2E467E332B345F9400F6C60E /* GhostAndPoliceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E467E322B345F9400F6C60E /* GhostAndPoliceUITests.swift */; };
 		2E467E352B345F9400F6C60E /* GhostAndPoliceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E467E342B345F9400F6C60E /* GhostAndPoliceUITestsLaunchTests.swift */; };
+		2E467E422B34618600F6C60E /* GridsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E467E412B34618600F6C60E /* GridsViewController.swift */; };
+		2E467E472B3461D000F6C60E /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E467E452B3461D000F6C60E /* GridCollectionViewCell.swift */; };
+		2E467E482B3461D000F6C60E /* GridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E467E462B3461D000F6C60E /* GridCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2E467E2E2B345F9400F6C60E /* GhostAndPoliceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GhostAndPoliceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E467E322B345F9400F6C60E /* GhostAndPoliceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostAndPoliceUITests.swift; sourceTree = "<group>"; };
 		2E467E342B345F9400F6C60E /* GhostAndPoliceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostAndPoliceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E467E412B34618600F6C60E /* GridsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsViewController.swift; sourceTree = "<group>"; };
+		2E467E452B3461D000F6C60E /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E467E462B3461D000F6C60E /* GridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				2E467E112B345F9300F6C60E /* AppDelegate.swift */,
+				2E467E432B34618B00F6C60E /* Views */,
 				2E467E132B345F9300F6C60E /* SceneDelegate.swift */,
-				2E467E152B345F9300F6C60E /* ViewController.swift */,
+				2E467E442B34619700F6C60E /* Controllers */,
 				2E467E172B345F9300F6C60E /* Main.storyboard */,
 				2E467E1A2B345F9400F6C60E /* Assets.xcassets */,
 				2E467E1C2B345F9400F6C60E /* LaunchScreen.storyboard */,
@@ -125,6 +132,24 @@
 				2E467E342B345F9400F6C60E /* GhostAndPoliceUITestsLaunchTests.swift */,
 			);
 			path = GhostAndPoliceUITests;
+			sourceTree = "<group>";
+		};
+		2E467E432B34618B00F6C60E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E467E452B3461D000F6C60E /* GridCollectionViewCell.swift */,
+				2E467E462B3461D000F6C60E /* GridCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E467E442B34619700F6C60E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E467E412B34618600F6C60E /* GridsViewController.swift */,
+				2E467E152B345F9300F6C60E /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E467E482B3461D000F6C60E /* GridCollectionViewCell.xib in Resources */,
 				2E467E1E2B345F9400F6C60E /* LaunchScreen.storyboard in Resources */,
 				2E467E1B2B345F9400F6C60E /* Assets.xcassets in Resources */,
 				2E467E192B345F9300F6C60E /* Main.storyboard in Resources */,
@@ -258,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E467E422B34618600F6C60E /* GridsViewController.swift in Sources */,
 				2E467E162B345F9300F6C60E /* ViewController.swift in Sources */,
 				2E467E122B345F9300F6C60E /* AppDelegate.swift in Sources */,
 				2E467E142B345F9300F6C60E /* SceneDelegate.swift in Sources */,
+				2E467E472B3461D000F6C60E /* GridCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
